@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /ai-bolit
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: true
+    properties:
+      hibernate:
+        show_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bolit_db
+    username: root
+    password: root
